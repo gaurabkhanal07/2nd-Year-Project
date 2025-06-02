@@ -1,0 +1,73 @@
+:root {
+  --primary-color: #fffcee;    /* Dark background */
+  --secondary-color: #9d4edd;   /* Neon purple */
+  --text-color: #222222;        /* White text */
+  --font-family: 'Open Sans', 'Segoe UI', sans-serif;
+}
+
+/* Container styling */
+.papers-table {
+  background-color: var(--primary-color);  /* Primary color for background */
+  border-collapse: collapse;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+/* Table headers */
+.papers-table thead {
+  background-color: #b185db; /* Secondary background for headers */
+  color: var(--primary-color);              /* Primary color for text */
+  font-weight: bold;                        /* Bold text for headers */
+  padding: 1rem !important;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.05) ;
+}
+
+/* Table body rows */
+.papers-table td {
+  padding: 0.8rem;
+  color: var(--text-color); /* Default text color */
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Alternating row background for better readability */
+.papers-table tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.05); /* Light shade for even rows */
+}
+
+/* Hover effect for rows */
+.papers-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Slight highlight on hover */
+  cursor: pointer;
+}
+
+.papers-table h2 {
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.papers-table thead th:first-child {
+  border-top-left-radius: 8px;
+  border-left: 1px solid rgba(0, 0, 0, 0) ;
+  border-top: 1px solid rgba(0, 0, 0, 0) ;
+}
+
+.papers-table thead th:last-child {
+  border-top-right-radius: 8px;
+  border-right: 1px solid rgba(0, 0, 0, 0) ;
+  border-top: 1px solid rgba(0, 0, 0, 0) ;
+}
+
+/* Rounded corners for table body (last row) */
+.papers-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 8px;
+  border-left: 1px solid rgba(0, 0, 0, 0) ;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.papers-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 8px;
+  border-right: 1px solid rgba(0, 0, 0, 0) ;
+  border-bottom: 1px solid rgba(0, 0, 0, 0) ;
+}
